@@ -15,7 +15,7 @@ def group():
     help = "Number is the amount of values between 0 and 2 π to calculate the sine with."
 )
 def sin(number):
-    """Caculate the sine of x, an integer between 0 and 2 π, for n times.
+    """Caculate the sine of x, an integer between 0 and 2 π, for n values.
     """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
@@ -29,7 +29,7 @@ def sin(number):
     help = "Number is the amount of values between 0 and 2 π to calculate the tangent with."
 )
 def tan(number):
-    """Caculate the tangent of x, an integer between 0 and 2 π, for n times.
+    """Caculate the tangent of x, an integer between 0 and 2 π, for n values.
     """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
